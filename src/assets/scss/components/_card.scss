@@ -1,0 +1,36 @@
+.card {
+  display: block;
+  padding: 3rem;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media("<=tablet") {
+    padding: 1rem;
+    width: 100% !important;
+  }
+}
+.card__title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: $f-semibold;
+  font-size: 1.8rem;
+
+  @include media("<tablet") {
+    margin-top: 20px;
+  }
+}
+
+.card__desc {
+  color: $text-gray;
+  line-height: 2.4rem;
+
+  @include media("<=tablet") {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+  }
+}
