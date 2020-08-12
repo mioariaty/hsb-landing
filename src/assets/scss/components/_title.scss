@@ -1,6 +1,5 @@
 .heading {
   max-width: 620px;
-  margin: 0 auto 120px;
 
   @include media("<tablet") {
     margin-bottom: 20px !important;

@@ -1,0 +1,32 @@
+.post-card {
+  display: block;
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
+  padding: 0;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-card__detail {
+  padding: 1rem 1.5rem;
+  position: relative;
+}
+
+.post-card__title {
+  font-weight: $f-medium;
+  line-height: 2.6rem;
+
+  @include media("<desktop") {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.post-card__time {
+  font-size: 1.2rem;
+  color: $text-gray;
+}

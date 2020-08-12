@@ -21,63 +21,9 @@
   .container {
     max-width: 1310px;
   }
-}
 
-.introduce-item {
-  position: relative;
-  width: calc(100% - 10px);
-  margin: 0 auto;
-  z-index: 1;
-
-  &:before {
-    content: "";
-    position: absolute;
-    top: -30px;
-    left: -45px;
-    width: 80px;
-    height: 80px;
-    z-index: -1;
-    border-radius: 50%;
-    background-color: currentColor;
-    opacity: 0.1;
-  }
-
-  @include media("<tablet") {
-    margin-bottom: 2rem;
-    &::before {
-      top: -22px;
-      left: -25px;
-      width: 60px;
-      height: 60px;
-    }
-  }
-  @include media("<desktop") {
-    margin-bottom: 3rem;
-    &::before {
-      top: -25px;
-      left: -25px;
-      width: 70px;
-      height: 70px;
-    }
-  }
-}
-
-.introduce__title {
-  font-size: 2rem;
-  font-weight: $f-semibold;
-  color: $text-default;
-  margin-bottom: 3rem;
-}
-
-.introduce__desc {
-  color: $text-gray;
-  line-height: 2.6rem;
-  @include media("<desktop") {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3; /* number of lines to show */
-    -webkit-box-orient: vertical;
+  .introduce-card {
+    width: calc(100% - 10px);
   }
 }
 
@@ -90,6 +36,10 @@
   @include media("<desktop") {
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+
+  .heading {
+    margin: 0 auto 120px;
   }
 }
 .trusted-content {
@@ -113,36 +63,10 @@
   .heading {
     margin: 0 auto 35px;
   }
-}
 
-.feature__list {
-  .card {
+  .feature-card {
     width: calc(100% - 20px);
     margin-bottom: 20px;
-  }
-}
-
-.feature__title {
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-weight: $f-semibold;
-  font-size: 1.8rem;
-
-  @include media("<tablet") {
-    margin-top: 20px;
-  }
-}
-
-.feature__desc {
-  color: $text-gray;
-  line-height: 2.4rem;
-
-  @include media("<=tablet") {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3; /* number of lines to show */
-    -webkit-box-orient: vertical;
   }
 }
 
@@ -160,35 +84,9 @@
   }
 }
 
-.post-list {
-  .card {
+.post {
+  .post-card {
     width: calc(100% - 10px);
-    border-radius: 6px;
-    padding: 0;
-    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
     margin-bottom: 1rem;
   }
-}
-
-.post-detail {
-  padding: 1rem 1.5rem;
-  position: relative;
-}
-
-.post__title {
-  font-weight: $f-medium;
-  line-height: 2.6rem;
-
-  @include media("<desktop") {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-  }
-}
-
-.post__time {
-  font-size: 1.2rem;
-  color: $text-gray;
 }
