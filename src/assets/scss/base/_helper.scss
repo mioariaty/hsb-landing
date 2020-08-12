@@ -1,0 +1,51 @@
+// state of element
+.is-shown {
+  display: block;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+}
+
+// margin
+$mb-8: 8rem;
+
+// text align
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+// color text
+.c-red {
+  color: $dark-red;
+}
+
+.c-blue {
+  color: $dark-blue;
+}
+
+.c-pink {
+  color: $dark-pink;
+}
+
+.c-green {
+  color: $dark-green;
+}
+
+.c-purple {
+  color: $dark-purple;
+}
+
+.c-sky {
+  color: $dark-sky;
+}

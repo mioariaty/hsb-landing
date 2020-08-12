@@ -1,0 +1,7 @@
+@function getSizeImage($height, $width) {
+  @return $height / $width * 100%;
+}
+
+@function col-width($i, $columns) {
+  @return 100% / $columns * $i;
+}

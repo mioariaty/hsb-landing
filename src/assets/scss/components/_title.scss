@@ -1,0 +1,30 @@
+.heading {
+  max-width: 620px;
+  margin: 0 auto 120px;
+
+  @include media("<tablet") {
+    margin-bottom: 20px !important;
+  }
+
+  @include media("<desktop") {
+    margin-bottom: 4rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+}
+
+.heading__title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: $text-default;
+  margin-bottom: 2rem;
+
+  span {
+    color: $dark-blue;
+  }
+}
+
+.heading__desc {
+  color: $text-gray;
+  line-height: 2.6rem;
+}

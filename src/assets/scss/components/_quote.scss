@@ -1,0 +1,62 @@
+.quote__icon {
+  color: $dark-blue;
+  font-size: 10rem;
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    z-index: -1;
+    border-radius: 50%;
+    background: $light-orange;
+  }
+
+  @include media("<tablet") {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+
+    &::after {
+      width: 50px;
+      height: 50px;
+      top: 2px;
+      left: 2px;
+    }
+  }
+}
+
+.quote__desc {
+  color: $text-gray;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+.quote__author {
+  font-weight: $f-bold;
+  font-size: 1.4rem;
+  color: $text-default;
+  padding-left: 3rem;
+  margin-bottom: 4rem;
+  margin-top: 3rem;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 2rem;
+    height: 1px;
+    background-color: $text-default;
+  }
+
+  @include media("<tablet") {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}

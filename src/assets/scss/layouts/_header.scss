@@ -1,0 +1,80 @@
+.header {
+  margin-bottom: $mb-8;
+  position: relative;
+
+  @include media("<tablet") {
+    margin-bottom: 0;
+  }
+  @include media("<desktop") {
+    margin-bottom: 2rem;
+  }
+
+  .row {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .container {
+    max-width: 1440px;
+  }
+}
+
+.header__menu {
+  transition: 0.3s cubic-bezier(0, 0, 0.12, 0.98);
+}
+
+.toggle-bar {
+  display: none;
+
+  @include media("<=tablet") {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    font-size: 2em;
+    border: unset;
+    padding: 0;
+  }
+}
+
+.header__menu-list {
+  @include flex(center, space-evenly);
+
+  @include media("<tablet") {
+    .header__menu-list {
+      flex-wrap: wrap;
+    }
+  }
+
+  .btn {
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: $f-semibold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.header__menu-link {
+  margin-left: 5rem;
+  font-family: "Poppins";
+  color: $text-black;
+  text-decoration: none;
+
+  @include media("<tablet") {
+    margin-left: 0;
+  }
+}
+
+.header__menu-item {
+  @include media("<=tablet") {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+.header__logo {
+  @include media("<tablet") {
+    flex: 1;
+  }
+}

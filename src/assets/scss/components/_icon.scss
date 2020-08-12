@@ -1,0 +1,31 @@
+.icon {
+  @include flex(center, center, nowrap);
+  width: 70px;
+  height: 70px;
+
+  border-radius: 50%;
+  font-size: 34px;
+
+  position: relative;
+  z-index: 1;
+
+  @include media("<tablet") {
+    width: 60px;
+    height: 60px;
+  }
+
+  &:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+
+    opacity: 0.2;
+    background-color: currentColor;
+  }
+}

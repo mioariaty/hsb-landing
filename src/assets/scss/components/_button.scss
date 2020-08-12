@@ -1,0 +1,21 @@
+.btn {
+  padding: 12px;
+  display: inline-block;
+  background-color: #ffffff;
+  outline: none;
+  cursor: pointer;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.btn--rounded {
+  border-radius: 10px;
+}
+
+.btn--green {
+  background-color: $light-green;
+}
+
+.btn--blue {
+  background-color: $dark-blue;
+}
