@@ -40,6 +40,10 @@
 
   .heading {
     margin: 0 auto 120px;
+
+    @include media("<=tablet") {
+      margin-bottom: 4rem;
+    }
   }
 }
 .trusted-content {
@@ -54,10 +58,14 @@
   padding: 8rem 7rem 9rem;
   margin-bottom: $mb-8;
   border-radius: 4rem;
+  width: 98%;
 
   @include media("<=tablet") {
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+  @include media("<tablet") {
+    width: 100%;
   }
 
   .heading {

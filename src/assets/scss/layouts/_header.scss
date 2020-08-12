@@ -57,6 +57,10 @@
 .header__menu-item:last-child {
   .btn {
     margin-left: 2rem;
+
+    @include media("<desktop") {
+      margin-left: 5rem;
+    }
   }
 }
 .header__menu-link {
