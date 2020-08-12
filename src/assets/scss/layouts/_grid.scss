@@ -17,50 +17,6 @@
     flex-wrap: wrap !important;
   }
 }
-
-[class*="col--"] {
-  padding: 1rem;
-
-  @include media("<desktop") {
-    width: 50% !important;
-  }
-  @include media("<tablet") {
-    width: 100% !important;
-  }
-}
-
-.col--2 {
-  width: 20%;
-}
-
-.col--3 {
-  width: 25%;
-}
-
-.col--4 {
-  width: calc(100% / 3);
-}
-
-.col--5 {
-  width: 41.666667%;
-}
-
-.col--6 {
-  width: 50%;
-}
-
-.col--8 {
-  width: 66.666667%;
-}
-
-.col--9 {
-  width: 75%;
-}
-
-.col--12 {
-  width: 100%;
-}
-
 .grid {
   @include grid-base($desk-grid-width);
 
@@ -74,7 +30,7 @@
     width: $mob-grid-width;
   }
 
-  &-0 {
+  &-fluid {
     @include grid-base(100%);
   }
 }
