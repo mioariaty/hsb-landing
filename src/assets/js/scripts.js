@@ -6,9 +6,7 @@
   const btnToggleMega = document.querySelector(".has-megamenu");
   const megaMenu = document.querySelector(".mega-menu");
 
-  const handleToggle = () => {
-    headerMenu.classList.toggle("is-hidden");
-  };
+  const handleToggle = () => headerMenu.classList.toggle("is-hidden");
 
   const handleResize = () => {
     if (window.innerWidth <= 1023) {
@@ -26,7 +24,7 @@
     }
   };
 
-  const handleDisplayMegaMenu = (e) => {
+  const toggleDisplayMegaMenu = (e) => {
     e.preventDefault();
     if (window.innerWidth <= 1023) {
       megaMenu.classList.toggle("is-mega-shown");
@@ -35,8 +33,11 @@
     }
   };
 
+  const onHoverMegaMenu = () => megaMenu.classList.add("is-shown");
+
   renderDisplayMenu();
   btnToggleBar.addEventListener("click", handleToggle);
   window.addEventListener("resize", handleResize);
-  btnToggleMega.addEventListener("click", handleDisplayMegaMenu);
+  btnToggleMega.addEventListener("click", toggleDisplayMegaMenu);
+  btnToggleMega.addEventListener("mouseenter", onHoverMegaMenu);
 })();
