@@ -80,8 +80,7 @@
   &:hover,
   &:focus,
   &:focus-within {
-    .sub-menu,
-    .mega-menu {
+    .sub-menu {
       visibility: visible;
       opacity: 1;
       transition-delay: 0s, 0s, 0.3s;

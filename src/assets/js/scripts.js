@@ -28,20 +28,15 @@
 
   const handleDisplayMegaMenu = (e) => {
     e.preventDefault();
-    const megaMenuStyles = {
-      opacity: 1,
-      visibility: "visible",
-      position: "relative",
-      top: "unset",
-      left: "unset",
-    };
-    console.log(megaMenuStyles);
-    Object.assign(megaMenu.style, megaMenuStyles);
+    if (window.innerWidth <= 1023) {
+      megaMenu.classList.toggle("is-mega-shown");
+    } else {
+      megaMenu.classList.toggle("is-shown");
+    }
   };
 
   renderDisplayMenu();
   btnToggleBar.addEventListener("click", handleToggle);
   window.addEventListener("resize", handleResize);
   btnToggleMega.addEventListener("click", handleDisplayMegaMenu);
-  btnToggleMega.addEventListener("onhover", handleDisplayMegaMenu);
 })();

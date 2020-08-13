@@ -1,7 +1,7 @@
 .mega-menu {
   visibility: hidden;
   opacity: 0;
-  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  transition: all 0.1s ease-in-out 0s, visibility 0s linear 0.1s, z-index 0s linear 0.01s;
 
   position: absolute;
   left: 0;
@@ -12,6 +12,8 @@
   z-index: 2;
 
   @include media("<=tablet") {
+    visibility: hidden;
+    opacity: 0;
   }
 }
 .mega-dropdown {

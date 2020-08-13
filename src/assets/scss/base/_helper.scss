@@ -1,8 +1,8 @@
 // state of element
 .is-shown {
   display: block;
-  opacity: 1;
-  visibility: visible;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 .is-hidden {
@@ -11,6 +11,13 @@
   height: 0;
 }
 
+.is-mega-shown {
+  opacity: 1 !important;
+  visibility: visible !important;
+  position: relative !important;
+  top: unset !important;
+  left: unset !important;
+}
 // margin
 $mb-8: px(80);
 
