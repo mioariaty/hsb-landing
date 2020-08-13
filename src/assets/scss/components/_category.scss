@@ -1,5 +1,4 @@
 .category {
-  position: relative;
   font-size: px(13);
   padding: px(4) px(15);
   background-color: $bg-cate;
@@ -8,6 +7,10 @@
   font-weight: $f-medium;
   color: #fff;
   z-index: 2;
+
+  position: absolute;
+  top: -20px;
+  left: 0;
 
   &:after {
     content: "";

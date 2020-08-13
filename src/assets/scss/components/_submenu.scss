@@ -1,0 +1,59 @@
+// mega menu
+.sub-menu {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2;
+
+  position: absolute;
+  left: 50%;
+  top: 25px;
+  transform: translateX(-50%);
+
+  background-color: $text-white;
+  border: 1px solid #ebebeb;
+  box-sizing: border-box;
+  min-width: px(170);
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+
+  @include media("<=tablet") {
+    opacity: 1;
+    visibility: visible;
+
+    position: static;
+    transform: unset;
+    top: unset;
+    left: unset;
+
+    border: unset;
+
+    // background-color: $text-white;
+  }
+}
+.sub-menu__item {
+  width: 100%;
+}
+.sub-menu__link {
+  color: $text-default;
+  font-weight: $f-medium;
+  display: block;
+  width: 100%;
+  padding: px(10);
+  transition: 0.2s all ease;
+
+  &:hover {
+    background-color: rgba($color: #000000, $alpha: 0.1);
+  }
+
+  @include media("<=tablet") {
+    // color: $text-default;
+    font-weight: $f-regular;
+  }
+}
+.sub-menu ul {
+  width: 100%;
+  list-style: none;
+
+  @include media("<=tablet") {
+    text-align: left;
+  }
+}

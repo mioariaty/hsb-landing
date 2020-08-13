@@ -16,6 +16,7 @@
   margin-bottom: px(10);
   font-weight: $f-semibold;
   font-size: px(18);
+  color: $text-default;
 
   @include media("<tablet") {
     margin-top: px(20);
@@ -23,8 +24,6 @@
 }
 
 .card__desc {
-  color: $text-gray;
   line-height: px(24);
-
   @include limit-line-text(3);
 }

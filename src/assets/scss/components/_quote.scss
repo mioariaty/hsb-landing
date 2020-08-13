@@ -1,8 +1,9 @@
 .quote__icon {
-  color: $dark-blue;
+  color: $primary-color;
   font-size: px(100);
   position: relative;
   z-index: 1;
+  padding-left: px(20);
 
   &::after {
     content: "";
@@ -40,7 +41,6 @@
 }
 
 .quote__desc {
-  color: $text-gray;
   font-size: px(16);
   line-height: px(25);
 }

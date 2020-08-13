@@ -29,11 +29,11 @@ $mb-8: px(80);
 
 // color text
 .c-red {
-  color: $dark-red;
+  color: $danger-color;
 }
 
 .c-blue {
-  color: $dark-blue;
+  color: $primary-color;
 }
 
 .c-pink {
@@ -41,7 +41,7 @@ $mb-8: px(80);
 }
 
 .c-green {
-  color: $dark-green;
+  color: $success-color;
 }
 
 .c-purple {
@@ -54,6 +54,9 @@ $mb-8: px(80);
 
 .justify-content-between {
   justify-content: space-between !important;
+}
+.align-items-center {
+  align-items: center !important;
 }
 .mx-auto {
   margin-left: auto !important;

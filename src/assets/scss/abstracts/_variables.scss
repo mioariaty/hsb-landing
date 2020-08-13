@@ -1,8 +1,11 @@
 // color pallete
-$dark-blue: #616ae8;
+
+$primary-color: #616ae8;
+$success-color: #48de57;
+$danger-color: #fd9b9b;
+
+//
 $dark-pink: #f16bac;
-$dark-red: #fd9b9b;
-$dark-green: #48de57;
 $dark-purple: #b06bf1;
 $dark-sky: #45ccdb;
 
@@ -17,6 +20,7 @@ $light-sky: #e7faf9;
 $text-gray: #7e7fa0;
 $text-default: #2e2a41;
 $text-black: #4f4b65;
+$text-white: #fff;
 
 // category bg-color
 $bg-cate: #5e68f9;
@@ -36,9 +40,6 @@ $breakpoints: (
   "tablet": 768px,
   "desktop": 1024px,
 );
-
-$breakpoint-mobile: 767px;
-$breakpoint-tablet: 1024px;
 
 /*
   GRID SYSTEM VARIABLES

@@ -1,11 +1,22 @@
 .btn {
-  padding: px(12);
+  padding: px(15) px(12) !important;
   display: inline-block;
-  background-color: #ffffff;
+
+  background-color: $text-white;
+  color: $text-white !important;
+
   outline: none;
-  cursor: pointer;
   vertical-align: middle;
   text-align: center;
+
+  font-size: 1.6rem;
+  font-weight: $f-semibold;
+  cursor: pointer;
+
+  @include media("<=tablet") {
+    display: inline-block !important;
+    margin-bottom: px(10);
+  }
 }
 
 .btn--rounded {
@@ -16,6 +27,6 @@
   background-color: $light-green;
 }
 
-.btn--blue {
-  background-color: $dark-blue;
+.btn--primary {
+  background-color: $primary-color;
 }

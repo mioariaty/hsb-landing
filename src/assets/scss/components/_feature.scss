@@ -23,7 +23,6 @@
 }
 
 .feature-card__desc {
-  color: $text-gray;
   line-height: px(24);
 
   @include media("<=tablet") {

@@ -1,10 +1,10 @@
 .section {
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 
   @include media("<desktop") {
-    padding-left: px(30) !important;
-    padding-right: px(30) !important;
+    padding: px(30) !important;
     margin-bottom: px(40) !important;
   }
   @include media("<tablet") {
@@ -25,8 +25,7 @@
 
 // trusted
 .trusted {
-  padding: 0 px(85);
-  position: relative;
+  padding: 0 px(85) px(30);
   margin-bottom: px(30);
 
   @include media("<desktop") {
@@ -45,14 +44,14 @@
   justify-content: center;
   flex-wrap: nowrap;
 }
-
+.trusted-content__image {
+  margin: 0 auto;
+  border-radius: px(10);
+  box-shadow: 0px 36px 44px rgba($color: #282a54, $alpha: 0.13);
+}
 // feature
 .feature {
-  background-color: $light-orange;
   padding: px(80) px(70) px(90);
-  margin-bottom: $mb-8;
-  border-radius: px(40);
-  width: 98%;
 
   @include media("<=tablet") {
     padding-top: px(30);
@@ -65,8 +64,7 @@
 
 // post
 .post {
-  max-width: 1170px;
-  margin-bottom: 10rem;
+  padding: 10rem;
 
   .heading {
     @include media("<desktop") {
@@ -79,4 +77,10 @@
     top: -20px;
     left: 0;
   }
+}
+
+.bg-test {
+  background-image: url("../../images/post1.png");
+  background-image: image-set(url("../../images/post1.png") 1x);
+  background-image: -webkit-image-set(url("../../images/post1.png") 1x);
 }

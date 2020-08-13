@@ -14,9 +14,13 @@ body {
   font-family: "Poppins";
   font-size: 1.5rem;
   font-weight: $f-regular;
+  color: $text-gray;
 }
 
 img {
   max-width: 100%;
   display: block;
+}
+a {
+  text-decoration: none;
 }
