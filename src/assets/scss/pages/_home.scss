@@ -61,10 +61,6 @@
   @include media("<tablet") {
     width: 100%;
   }
-
-  .card {
-    margin-bottom: px(30);
-  }
 }
 
 // post
@@ -82,11 +78,5 @@
     position: absolute;
     top: -20px;
     left: 0;
-  }
-}
-
-.post {
-  .post-card {
-    margin-bottom: px(30);
   }
 }

@@ -10,8 +10,8 @@
 @mixin col-props($i, $columns, $gutter) {
   box-sizing: border-box;
   width: col-width($i, $columns);
-  padding-left: $gutter/2;
-  padding-right: $gutter/2;
+  padding: $gutter/2;
+  // padding-right: $gutter/2;
 }
 
 @mixin grid-base($width) {
