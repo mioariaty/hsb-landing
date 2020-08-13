@@ -1,8 +1,8 @@
 .card {
   display: block;
-  padding: 3rem;
+  padding: px(30);
   background-color: #fff;
-  border-radius: 20px;
+  border-radius: px(20);
   margin-left: auto;
   margin-right: auto;
 
@@ -12,25 +12,19 @@
   }
 }
 .card__title {
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-top: px(30);
+  margin-bottom: px(10);
   font-weight: $f-semibold;
-  font-size: 1.8rem;
+  font-size: px(18);
 
   @include media("<tablet") {
-    margin-top: 20px;
+    margin-top: px(20);
   }
 }
 
 .card__desc {
   color: $text-gray;
-  line-height: 2.4rem;
+  line-height: px(24);
 
-  @include media("<=tablet") {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3; /* number of lines to show */
-    -webkit-box-orient: vertical;
-  }
+  @include limit-line-text(3);
 }

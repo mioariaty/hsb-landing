@@ -1,6 +1,8 @@
 // state of element
 .is-shown {
   display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 .is-hidden {
@@ -10,7 +12,7 @@
 }
 
 // margin
-$mb-8: 8rem;
+$mb-8: px(80);
 
 // text align
 .text-center {
@@ -52,4 +54,16 @@ $mb-8: 8rem;
 
 .justify-content-between {
   justify-content: space-between !important;
+}
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.mb-3 {
+  margin-bottom: px(30);
+}
+
+.mb-12 {
+  margin-bottom: px(120);
 }

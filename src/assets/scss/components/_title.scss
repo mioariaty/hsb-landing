@@ -1,22 +1,23 @@
 .heading {
-  max-width: 620px;
+  max-width: px(620);
+  margin-bottom: px(35);
 
   @include media("<tablet") {
-    margin-bottom: 20px !important;
+    margin-bottom: px(20) !important;
   }
 
   @include media("<desktop") {
-    margin-bottom: 4rem;
-    padding-left: 0.4rem;
-    padding-right: 0.4rem;
+    margin-bottom: px(40);
+    padding-left: px(4);
+    padding-right: px(4);
   }
 }
 
 .heading__title {
-  font-size: 3rem;
+  font-size: px(30);
   font-weight: 700;
   color: $text-default;
-  margin-bottom: 2rem;
+  margin-bottom: px(20);
 
   span {
     color: $dark-blue;
@@ -25,5 +26,5 @@
 
 .heading__desc {
   color: $text-gray;
-  line-height: 2.6rem;
+  line-height: px(26);
 }

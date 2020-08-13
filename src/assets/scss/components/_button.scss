@@ -1,5 +1,5 @@
 .btn {
-  padding: 12px;
+  padding: px(12);
   display: inline-block;
   background-color: #ffffff;
   outline: none;
@@ -9,7 +9,7 @@
 }
 
 .btn--rounded {
-  border-radius: 10px;
+  border-radius: px(10);
 }
 
 .btn--green {

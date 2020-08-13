@@ -1,10 +1,10 @@
 .category {
   position: relative;
-  font-size: 13px;
-  padding: 4px 15px;
+  font-size: px(13);
+  padding: px(4) px(15);
   background-color: $bg-cate;
   display: inline-block;
-  line-height: 20px;
+  line-height: px(20);
   font-weight: $f-medium;
   color: #fff;
   z-index: 2;
@@ -17,8 +17,8 @@
     width: 0;
     height: 0;
     border-left: 0px solid transparent;
-    border-right: 12px solid transparent;
-    border-bottom: 20px solid $bg-cate;
+    border-right: px(12) solid transparent;
+    border-bottom: px(20) solid $bg-cate;
     z-index: -1;
   }
 
@@ -30,8 +30,8 @@
     width: 0;
     height: 0;
     border-left: 0px solid transparent;
-    border-right: 12px solid transparent;
-    border-bottom: 20px solid rgba($color: #000000, $alpha: 0.4);
+    border-right: px(12) solid transparent;
+    border-bottom: px(20) solid rgba($color: #000000, $alpha: 0.4);
     z-index: 1;
   }
 }

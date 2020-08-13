@@ -17,6 +17,7 @@
     flex-wrap: wrap !important;
   }
 }
+
 .grid {
   @include grid-base($desk-grid-width);
 

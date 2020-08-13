@@ -55,12 +55,12 @@
     margin-left: 2rem;
 
     @include media("<desktop") {
-      margin-left: 5rem;
+      margin-left: px(50);
     }
   }
 }
 .header__menu-link {
-  margin-left: 5rem;
+  margin-left: px(50);
   font-family: "Poppins";
   color: $text-black;
   text-decoration: none;

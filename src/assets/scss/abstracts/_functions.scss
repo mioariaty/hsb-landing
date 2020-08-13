@@ -5,3 +5,7 @@
 @function col-width($i, $columns) {
   @return 100% / $columns * $i;
 }
+
+@function px($pixel) {
+  @return #{$pixel / 10}rem;
+}

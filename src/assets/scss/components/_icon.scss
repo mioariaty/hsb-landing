@@ -1,17 +1,17 @@
 .icon {
   @include flex(center, center, nowrap);
-  width: 70px;
-  height: 70px;
+  width: px(70);
+  height: px(70);
 
   border-radius: 50%;
-  font-size: 34px;
+  font-size: px(34);
 
   position: relative;
   z-index: 1;
 
   @include media("<tablet") {
-    width: 60px;
-    height: 60px;
+    width: px(60);
+    height: px(60);
   }
 
   &:after {
