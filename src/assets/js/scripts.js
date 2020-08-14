@@ -33,11 +33,8 @@
     }
   };
 
-  const onHoverMegaMenu = () => megaMenu.classList.add("is-shown");
-
   renderDisplayMenu();
   btnToggleBar.addEventListener("click", handleToggle);
   window.addEventListener("resize", handleResize);
   btnToggleMega.addEventListener("click", toggleDisplayMegaMenu);
-  btnToggleMega.addEventListener("mouseenter", onHoverMegaMenu);
 })();
