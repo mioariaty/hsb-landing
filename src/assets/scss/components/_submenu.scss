@@ -1,22 +1,19 @@
 // mega menu
 .sub-menu {
-  visibility: hidden;
+  @include isHidden;
   @include sub-menu($text-white, #ebebeb, px(170));
-  opacity: 0;
-  transform: translateX(-50%);
+  @include setPositions(25px, unset, 50%, unset);
 
+  transform: translateX(-50%);
   box-sizing: border-box;
   transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
 
   @include media("<=tablet") {
-    opacity: 1;
-    visibility: visible;
+    @include isShown;
+    @include setPositions();
 
     position: static;
     transform: unset;
-    top: unset;
-    left: unset;
-
     border: unset;
   }
 }

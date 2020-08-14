@@ -1,7 +1,6 @@
 .icon {
   @include flex(center, center, nowrap);
-  width: px(70);
-  height: px(70);
+  @include setIconSize(px(70));
 
   border-radius: 50%;
   font-size: px(34);
@@ -10,21 +9,17 @@
   z-index: 1;
 
   @include media("<tablet") {
-    width: px(60);
-    height: px(60);
+    @include setIconSize(px(60));
   }
 
   &:after {
+    @include setIconSize(100%);
+    @include setPositions(0, unset, 0, unset);
+
     content: "";
-    width: 100%;
-    height: 100%;
-    border-radius: 100%;
-
     position: absolute;
-    top: 0;
-    left: 0;
     z-index: 0;
-
+    border-radius: 100%;
     opacity: 0.2;
     background-color: currentColor;
   }

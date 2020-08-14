@@ -1,11 +1,9 @@
 .mega-menu {
-  visibility: hidden;
-  opacity: 0;
+  @include isHidden;
   transition: all 0.1s ease-in-out 0s, visibility 0s linear 0.1s, z-index 0s linear 0.01s;
 
   position: absolute;
-  left: 0;
-  top: 100%;
+  @include setPositions(100%, unset, 0, unset);
 
   width: 100%;
   background-color: rgb(250, 250, 250);
@@ -13,8 +11,7 @@
   color: $text-default;
 
   @include media("<=tablet") {
-    visibility: hidden;
-    opacity: 0;
+    @include isHidden;
   }
 }
 .mega-dropdown {

@@ -5,7 +5,7 @@
 
   @include media("<desktop") {
     padding: px(30) !important;
-    margin-bottom: px(40) !important;
+    margin-bottom: px(30) !important;
   }
   @include media("<tablet") {
     padding: px(20) px(10) !important;
@@ -77,10 +77,4 @@
     top: -20px;
     left: 0;
   }
-}
-
-.bg-test {
-  background-image: url("../../images/post1.png");
-  background-image: image-set(url("../../images/post1.png") 1x);
-  background-image: -webkit-image-set(url("../../images/post1.png") 1x);
 }
