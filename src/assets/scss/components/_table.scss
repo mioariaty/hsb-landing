@@ -1,0 +1,27 @@
+.table-responsive {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+
+  @include media("<=tablet") {
+    overflow-x: scroll;
+  }
+}
+.table {
+  width: 100%;
+  max-width: 100%;
+  background-color: $text-white;
+  border-collapse: collapse;
+}
+
+.table thead th {
+  vertical-align: middle;
+  border: 1px solid rgb(222, 226, 230);
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  border: 1px solid rgb(222, 226, 230);
+}
