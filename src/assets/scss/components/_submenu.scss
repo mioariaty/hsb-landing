@@ -1,18 +1,11 @@
 // mega menu
 .sub-menu {
   visibility: hidden;
+  @include sub-menu($text-white, #ebebeb, px(170));
   opacity: 0;
-  z-index: 2;
-
-  position: absolute;
-  left: 50%;
-  top: 25px;
   transform: translateX(-50%);
 
-  background-color: $text-white;
-  border: 1px solid #ebebeb;
   box-sizing: border-box;
-  min-width: px(170);
   transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
 
   @include media("<=tablet") {
@@ -29,6 +22,7 @@
 }
 .sub-menu__item {
   width: 100%;
+  position: relative;
 }
 .sub-menu__link {
   color: $text-default;
@@ -43,7 +37,6 @@
   }
 
   @include media("<=tablet") {
-    // color: $text-default;
     font-weight: $f-regular;
   }
 }
