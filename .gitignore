@@ -8,7 +8,6 @@
 # production
 /build
 /.dev
-/.idea
 
 # misc
 .DS_Store
@@ -23,3 +22,5 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# force remove a folder: git rm --cached -r [folder]
