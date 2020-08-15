@@ -10,7 +10,7 @@
     transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
   }
 
-  @include media("<=tablet") {
+  @include media("<desktop") {
     @include setPositions();
     border: unset;
     background-color: transparent;
@@ -32,7 +32,7 @@
     background-color: rgba($color: #000000, $alpha: 0.1);
   }
 
-  @include media("<=tablet") {
+  @include media("<desktop") {
     font-weight: $f-regular;
     color: $text-white;
   }
@@ -46,6 +46,15 @@
   }
 }
 .submenu-active .sub-menu {
+  @include isShown;
+  @include setPositions(unset, unset, unset, unset);
+  display: block;
+  position: static;
+  transform: unset;
+  transition: none;
+}
+
+.megamenu-active .mega-menu {
   @include isShown;
   @include setPositions(unset, unset, unset, unset);
   display: block;

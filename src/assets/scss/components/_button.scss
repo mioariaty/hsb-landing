@@ -34,9 +34,8 @@
 .btn-group {
   @include flex(center);
 
-  @include media("<=tablet") {
+  @include media("<desktop") {
     width: 100%;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -47,10 +46,9 @@
       margin-right: 0;
     }
 
-    @include media("<=tablet") {
-      margin-left: 0;
-      margin-right: 0;
-      margin-bottom: 1rem;
+    @include media("<desktop") {
+      margin-left: px(4);
+      margin-right: px(4);
     }
   }
 }

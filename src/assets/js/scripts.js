@@ -15,10 +15,18 @@
       icon.setAttribute("class", "las la-angle-down");
       menuLink.appendChild(icon);
     }
+
+    if (
+      item.classList.contains("has-submenu") ||
+      item.classList.contains("has-megamenu")
+    ) {
+      item.addEventListener("click", (e) => e.preventDefault());
+    }
   });
 
   // toggle menu
   const handleToggleMenu = () => {
+    btnToggleBar.style.color = "#616ae8";
     if (menu.classList.contains("is-hidden")) {
       menu.classList.remove("is-hidden");
       btnToggleBar.style.color = "#fff";
@@ -53,13 +61,15 @@
       if (item.querySelector(".sub-menu")) {
         item.addEventListener("click", toggleSubMenu, false);
       }
+      if (item.querySelector(".mega-menu")) {
+        item.addEventListener("click", toggleMegaMenu, false);
+      }
     }
   };
 
   // active submenu
   function toggleSubMenu(e) {
     e.preventDefault();
-    console.log(this);
     if (this.classList.contains("submenu-active")) {
       this.classList.remove("submenu-active");
     } else if (menu.querySelector(".submenu-active")) {
@@ -70,11 +80,22 @@
     }
   }
 
+  // active mega menu
+  function toggleMegaMenu(e) {
+    e.preventDefault();
+    if (this.classList.contains("megamenu-active")) {
+      this.classList.remove("megamenu-active");
+    } else if (menu.querySelector(".megamenu-active")) {
+      menu
+        .querySelector(".megamenu-active")
+        .classList.remove("megamenu-active");
+      this.classList.add("megamenu-active");
+    } else {
+      this.classList.add("megamenu-active");
+    }
+  }
   // event listener
   renderDisplayMenu();
   btnToggleBar.addEventListener("click", handleToggleMenu);
   window.addEventListener("resize", handleResize);
-  btnToggleMega.forEach((item) =>
-    item.addEventListener("click", (e) => e.preventDefault())
-  );
 })();

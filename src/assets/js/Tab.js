@@ -14,15 +14,11 @@
       if (!initCalled) {
         initCalled = true;
         el.classList.remove("no-js");
-
-        for (let i = 0; i < tabLinks.length; i++) {
-          const link = tabLinks[i];
-          handleClick(link, i);
-        }
+        tabLinks.forEach((link, index) => _handleClick(link, index));
       }
     };
 
-    const handleClick = (link, index) => {
+    const _handleClick = (link, index) => {
       link.addEventListener("click", (e) => {
         e.preventDefault();
         goToTab(index);
@@ -48,7 +44,7 @@
     };
   };
 
-  // export global namescpace
+  // export global namespace
   window.Tab = Tab;
 })();
 
