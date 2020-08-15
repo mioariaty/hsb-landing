@@ -18,735 +18,898 @@
   <div id="root">
     <!-- header -->
     <header class="header">
-      <div class="container">
-        <div class="grid-fluid justify-content-between align-items-center">
-          <a href="" class="header__logo">
-            <img src="./assets/images/logo.png" alt="">
-          </a>
-          <button class="btn toggle-bar">
-            <i class="las la-bars"></i>
-          </button>
-          <nav class="header__menu">
-            <ul class="header__menu-list">
-              <li class="header__menu-item">
-                <a href="" class="header__menu-link">Home</a>
-                <div class="sub-menu">
-                  <ul class="text-center">
-                    <li class="sub-menu__item">
-                      <a href="" class="sub-menu__link">Sub link 1</a>
-                    </li>
-                    <li class="sub-menu__item">
-                      <a href="" class="sub-menu__link">Sub link 2</a>
-                    </li>
-                    <li class="sub-menu__item">
-                      <a href="" class="sub-menu__link">Sub link 3</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="header__menu-item">
-                <a href="" class="header__menu-link">About Aplication</a>
-                <div class="sub-menu">
-                  <ul class="text-center">
-                    <li class="sub-menu__item">
-                      <a href="" class="sub-menu__link">Sub link 1</a>
-                    </li>
-                    <li class="sub-menu__item">
-                      <a href="" class="sub-menu__link">Sub link 2</a>
-                    </li>
-                    <li class="sub-menu__item">
-                      <a href="" class="sub-menu__link">Sub link 3</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="header__menu-item mega-dropdown">
-                <a href="" class="header__menu-link has-megamenu">Mega menu</a>
-                <!-- Mega menu -->
-                <div class="mega-menu">
-                  <div class="container">
-                    <div class="grid-fluid">
-                      <div class="col-desk-4 col-tab-6 col-mob-12">
-                        <a href="#" class="post-card">
-                          <div class="post-card__image">
-                            <img
-                              src="https://images.pexels.com/photos/4673428/pexels-photo-4673428.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                              alt="" class="">
-                          </div>
+      <div class="grid-fluid justify-content-between align-items-center">
+        <a href="" class="header__logo">
+          <img src="./assets/images/logo.png" alt="">
+        </a>
+        <button class="btn toggle-bar">
+          <i class="las la-bars"></i>
+        </button>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item has-submenu">
+              <a href="" class="menu__link">Home</a>
 
-                          <div class="post-card__detail">
-                            <h3 class="post-card__title">
-                              Alii autem quibus ego assentior
-                            </h3>
-                            <p class="post-card__time">
-                              November 9, 2019 • 03 Comments
-                            </p>
-                            <p class="category">
-                              Design
-                            </p>
-                          </div>
-                        </a>
+              <!-- sub menu -->
+              <ul class="sub-menu text-center">
+                <li class="sub-menu__item">
+                  <a href="" class="sub-menu__link">Sub link 1</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="" class="sub-menu__link">Sub link 2</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="" class="sub-menu__link">Sub link 3</a>
+                </li>
+              </ul>
+              <!-- sub menu -->
+
+            </li>
+            <li class="menu__item has-submenu">
+              <a href="" class="menu__link">About Aplication</a>
+              <ul class="sub-menu text-center">
+                <li class="sub-menu__item">
+                  <a href="" class="sub-menu__link">Sub link 1</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="" class="sub-menu__link">Sub link 2</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="" class="sub-menu__link">Sub link 3</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item mega-dropdown">
+              <a href="" class="menu__link has-megamenu">Mega menu</a>
+              <!-- Mega menu -->
+              <div class="mega-menu">
+                <div class="grid-fluid">
+                  <div class="col-desk-4 col-tab-6 col-mob-12">
+                    <a href="#" class="post-card">
+                      <div class="post-card__image">
+                        <img
+                          src="https://images.pexels.com/photos/4673428/pexels-photo-4673428.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                          alt="" class="">
                       </div>
-                      <div class="col-desk-8 col-tab-6 col-mob-12">
-                        <div class="slide">
-                          <div class="swiper-container">
 
-                            <!-- slide wrapper -->
-                            <div class="swiper-wrapper">
-                              <div class="swiper-slide">
-                                <div class="grid-fluid">
+                      <div class="post-card__detail">
+                        <h3 class="post-card__title">
+                          Alii autem quibus ego assentior
+                        </h3>
+                        <p class="post-card__time">
+                          November 9, 2019 • 03 Comments
+                        </p>
+                        <p class="category">
+                          Design
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-desk-8 col-tab-6 col-mob-12">
+                    <div class="slide">
+                      <div class="swiper-container">
 
-                                  <div class="col-desk-6">
-                                    <a href="#" class="post-card">
-                                      <div class="post-card__image">
-                                        <img
-                                          src="https://images.pexels.com/photos/4724071/pexels-photo-4724071.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                          alt="" class="">
-                                      </div>
+                        <!-- slide wrapper -->
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="grid-fluid">
 
-                                      <div class="post-card__detail">
-                                        <h3 class="post-card__title">
-                                          Alii autem quibus ego assentior
-                                        </h3>
-                                        <p class="post-card__time">
-                                          November 9, 2019 • 03 Comments
-                                        </p>
-                                        <p class="category">
-                                          Life style
-                                        </p>
-                                      </div>
-                                    </a>
+                              <div class="col-desk-6">
+                                <a href="#" class="post-card">
+                                  <div class="post-card__image">
+                                    <img
+                                      src="https://images.pexels.com/photos/4724071/pexels-photo-4724071.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                      alt="" class="">
                                   </div>
 
-                                  <div class="col-desk-6">
-                                    <a href="#" class="post-card">
-                                      <div class="post-card__image">
-                                        <img
-                                          src="https://images.pexels.com/photos/3772226/pexels-photo-3772226.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                          alt="" class="">
-                                      </div>
-
-                                      <div class="post-card__detail">
-                                        <h3 class="post-card__title">
-                                          Alii autem quibus ego assentior
-                                        </h3>
-                                        <p class="post-card__time">
-                                          November 9, 2019 • 03 Comments
-                                        </p>
-                                        <p class="category">
-                                          Life style
-                                        </p>
-                                      </div>
-                                    </a>
+                                  <div class="post-card__detail">
+                                    <h3 class="post-card__title">
+                                      Alii autem quibus ego assentior
+                                    </h3>
+                                    <p class="post-card__time">
+                                      November 9, 2019 • 03 Comments
+                                    </p>
+                                    <p class="category">
+                                      Life style
+                                    </p>
                                   </div>
-                                  <div class="col-desk-6">
-                                    <a href="#" class="post-card">
-                                      <div class="post-card__image">
-                                        <img
-                                          src="https://images.pexels.com/photos/4431045/pexels-photo-4431045.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                          alt="" class="">
-                                      </div>
-
-                                      <div class="post-card__detail">
-                                        <h3 class="post-card__title">
-                                          Alii autem quibus ego assentior
-                                        </h3>
-                                        <p class="post-card__time">
-                                          November 9, 2019 • 03 Comments
-                                        </p>
-                                        <p class="category">
-                                          Life style
-                                        </p>
-                                      </div>
-                                    </a>
-                                  </div>
-                                  <div class="col-desk-6">
-                                    <a href="#" class="post-card">
-                                      <div class="post-card__image">
-                                        <img
-                                          src="https://images.pexels.com/photos/4956618/pexels-photo-4956618.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                          alt="" class="">
-                                      </div>
-
-                                      <div class="post-card__detail">
-                                        <h3 class="post-card__title">
-                                          Alii autem quibus ego assentior
-                                        </h3>
-                                        <p class="post-card__time">
-                                          November 9, 2019 • 03 Comments
-                                        </p>
-                                        <p class="category">
-                                          Life style
-                                        </p>
-                                      </div>
-                                    </a>
-                                  </div>
-
-                                </div>
+                                </a>
                               </div>
 
-                              <div class="swiper-slide">
-                                <div class="table-responsive">
-                                  <table class="table">
-                                    <thead>
-                                      <tr>
-                                        <th>STT</th>
-                                        <th>Name</th>
-                                        <th>Emai</th>
-                                        <th>Address</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <th>1</th>
-                                        <td>Tommy Teo</td>
-                                        <td>tm@gmail.com</td>
-                                        <td>adsasd asd á da đá á dá da sdas đa ád á</td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
+                              <div class="col-desk-6">
+                                <a href="#" class="post-card">
+                                  <div class="post-card__image">
+                                    <img
+                                      src="https://images.pexels.com/photos/3772226/pexels-photo-3772226.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                      alt="" class="">
+                                  </div>
+
+                                  <div class="post-card__detail">
+                                    <h3 class="post-card__title">
+                                      Alii autem quibus ego assentior
+                                    </h3>
+                                    <p class="post-card__time">
+                                      November 9, 2019 • 03 Comments
+                                    </p>
+                                    <p class="category">
+                                      Life style
+                                    </p>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-desk-6">
+                                <a href="#" class="post-card">
+                                  <div class="post-card__image">
+                                    <img
+                                      src="https://images.pexels.com/photos/4431045/pexels-photo-4431045.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                      alt="" class="">
+                                  </div>
+
+                                  <div class="post-card__detail">
+                                    <h3 class="post-card__title">
+                                      Alii autem quibus ego assentior
+                                    </h3>
+                                    <p class="post-card__time">
+                                      November 9, 2019 • 03 Comments
+                                    </p>
+                                    <p class="category">
+                                      Life style
+                                    </p>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col-desk-6">
+                                <a href="#" class="post-card">
+                                  <div class="post-card__image">
+                                    <img
+                                      src="https://images.pexels.com/photos/4956618/pexels-photo-4956618.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                      alt="" class="">
+                                  </div>
+
+                                  <div class="post-card__detail">
+                                    <h3 class="post-card__title">
+                                      Alii autem quibus ego assentior
+                                    </h3>
+                                    <p class="post-card__time">
+                                      November 9, 2019 • 03 Comments
+                                    </p>
+                                    <p class="category">
+                                      Life style
+                                    </p>
+                                  </div>
+                                </a>
                               </div>
 
                             </div>
                           </div>
-                          <!-- !slide wrapper -->
+
+                          <div class="swiper-slide">
+                            <div class="table-responsive">
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th>STT</th>
+                                    <th>Name</th>
+                                    <th>Emai</th>
+                                    <th>Address</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th>1</th>
+                                    <td>Tommy Teo</td>
+                                    <td>tm@gmail.com</td>
+                                    <td>adsasd asd á da đá á dá da sdas đa ád á</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- !Mega menu -->
-
-              </li>
-
-              <li class="header__menu-item mega-dropdown">
-                <a href="" class="header__menu-link has-megamenu">Blog</a>
-
-                <!-- Mega menu -->
-                <div class="mega-menu">
-                  <div class="container">
-                    <div class="grid-fluid">
-                      <div class="col-desk-3 col-mob-6 text-center">
-                        <h3>Category</h3>
-                        <p>Category item</p>
-                        <p>Category item</p>
-                        <p>Category item</p>
-                        <p>Category item</p>
-                      </div>
-
-                      <div class="col-desk-3 col-mob-6 text-center">
-                        <h3>Category</h3>
-                        <p>Category item</p>
-                        <p>Category item</p>
-                        <p>Category item</p>
-                        <p>Category item</p>
-                      </div>
-
-                      <div class="col-desk-3 col-mob-6 text-center">
-                        <h3>Category</h3>
-                        <p>Category item</p>
-                        <p>Category item</p>
-                        <p>Category item</p>
-                        <p>Category item</p>
-                      </div>
-
-                      <div class="col-desk-3 col-mob-6 text-center">
-                        <h3>Category</h3>
-                        <p>Category item</p>
-                        <p>Category item</p>
-                        <p>Category item</p>
-                        <p>Category item</p>
-                      </div>
-
-                      <div class="col-desk-3 col-mob-6 text-center">
-                        <h3>Category</h3>
-                        <p>Category item</p>
-                        <p>Category item</p>
-                        <p>Category item</p>
-                        <p>Category item</p>
-                      </div>
-
-                      <div class="col-desk-3 col-mob-6 text-center">
-                        <h3>Category</h3>
-                        <p>Category item</p>
-                        <p>Category item</p>
-                        <p>Category item</p>
-                        <p>Category item</p>
-                      </div>
-
-                      <div class="col-desk-3 col-mob-6 text-center">
-                        <h3>Category</h3>
-                        <p>Category item</p>
-                        <p>Category item</p>
-                        <p>Category item</p>
-                        <p>Category item</p>
-                      </div>
-
-                      <div class="col-desk-3 col-mob-6x` text-center">
-                        <h3>Category</h3>
-                        <p>Category item</p>
-                        <p>Category item</p>
-                        <p>Category item</p>
-                        <p>Category item</p>
-                      </div>
+                      <!-- !slide wrapper -->
 
                     </div>
                   </div>
                 </div>
-                <!-- !Mega menu -->
+              </div>
+              <!-- !Mega menu -->
 
-              </li>
-              <li class="header__menu-item">
-                <a href="" class="header__menu-link btn btn--rounded btn--primary">Get Started</a>
-              </li>
-              <li class="header__menu-item">
-                <a href="" class="header__menu-link btn btn--rounded btn--green">Buy Now</a>
-              </li>
-            </ul>
-          </nav>
+            </li>
+
+            <li class="menu__item mega-dropdown">
+              <a href="" class="menu__link has-megamenu">Blog</a>
+
+              <!-- Mega menu -->
+              <div class="mega-menu">
+                <div class="grid-fluid">
+                  <div class="col-desk-3 col-mob-6 text-center">
+                    <h3>Category</h3>
+                    <p>Category item</p>
+                    <p>Category item</p>
+                    <p>Category item</p>
+                    <p>Category item</p>
+                  </div>
+
+                  <div class="col-desk-3 col-mob-6 text-center">
+                    <h3>Category</h3>
+                    <p>Category item</p>
+                    <p>Category item</p>
+                    <p>Category item</p>
+                    <p>Category item</p>
+                  </div>
+
+                  <div class="col-desk-3 col-mob-6 text-center">
+                    <h3>Category</h3>
+                    <p>Category item</p>
+                    <p>Category item</p>
+                    <p>Category item</p>
+                    <p>Category item</p>
+                  </div>
+
+                  <div class="col-desk-3 col-mob-6 text-center">
+                    <h3>Category</h3>
+                    <p>Category item</p>
+                    <p>Category item</p>
+                    <p>Category item</p>
+                    <p>Category item</p>
+                  </div>
+
+                  <div class="col-desk-3 col-mob-6 text-center">
+                    <h3>Category</h3>
+                    <p>Category item</p>
+                    <p>Category item</p>
+                    <p>Category item</p>
+                    <p>Category item</p>
+                  </div>
+
+                  <div class="col-desk-3 col-mob-6 text-center">
+                    <h3>Category</h3>
+                    <p>Category item</p>
+                    <p>Category item</p>
+                    <p>Category item</p>
+                    <p>Category item</p>
+                  </div>
+
+                  <div class="col-desk-3 col-mob-6 text-center">
+                    <h3>Category</h3>
+                    <p>Category item</p>
+                    <p>Category item</p>
+                    <p>Category item</p>
+                    <p>Category item</p>
+                  </div>
+
+                  <div class="col-desk-3 col-mob-6x` text-center">
+                    <h3>Category</h3>
+                    <p>Category item</p>
+                    <p>Category item</p>
+                    <p>Category item</p>
+                    <p>Category item</p>
+                  </div>
+
+                </div>
+              </div>
+              <!-- !Mega menu -->
+            </li>
+          </ul>
+
+          <div class="btn-group">
+            <a href="" class="btn btn--rounded btn--primary">Get Started</a>
+            <a href="" class="btn btn--rounded btn--green">Buy Now</a>
+          </div>
+        </nav>
+
+      </div>
+  </div>
+  <!-- !header -->
+
+  <main class="main">
+    <!-- introduce block -->
+    <section class="section introduce">
+      <div class="container">
+        <div class="grid-fluid">
+          <div class="col-desk-3 col-tab-6 col-mob-12">
+            <div class="introduce-card c-red">
+              <h3 class="introduce-card__title">WP + IOS + Android</h3>
+              <p class="introduce-card__desc">
+                Based on ReactJS and React Native, HsBlog not only is a WP theme, but also let you to build your iOS +
+                Android App Native App
+              </p>
+            </div>
+          </div>
+          <div class="col-desk-3 col-tab-6 col-mob-12">
+            <div class="introduce-card c-info">
+              <h3 class="introduce-card__title">Single page application</h3>
+              <p class="introduce-card__desc">
+                SPA improves your Customer Experience. When navigating from a page to another page, HsBlog WILL NOT
+                REFRESH
+                Browser like other themes.
+              </p>
+            </div>
+          </div>
+          <div class="col-desk-3 col-tab-6 col-mob-12">
+            <div class="introduce-card c-purple">
+              <h3 class="introduce-card__title">Drag & Drop Page Builder</h3>
+              <p class="introduce-card__desc">
+                We have created our own Page Builder for HsBlog. It allows you to build either Web Page or App Home
+                page.
+              </p>
+            </div>
+          </div>
+          <div class="col-desk-3 col-tab-6 col-mob-12">
+            <div class="introduce-card c-blue">
+              <h3 class="introduce-card__title">Elite Support</h3>
+              <p class="introduce-card__desc">
+                help.highspeedblog.com is our Help Center where you can find useful information on Documentation page
+                and
+                You can ask for us anything there.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </header>
-    <!-- !header -->
+    </section>
+    <!-- !introduce block -->
 
-    <main class="main">
-      <!-- introduce block -->
-      <section class="section introduce">
-        <div class="container">
-          <div class="grid-fluid">
-            <div class="col-desk-3 col-tab-6 col-mob-12">
-              <div class="introduce-card c-red">
-                <h3 class="introduce-card__title">WP + IOS + Android</h3>
-                <p class="introduce-card__desc">
-                  Based on ReactJS and React Native, HsBlog not only is a WP theme, but also let you to build your iOS +
-                  Android App Native App
-                </p>
-              </div>
-            </div>
-            <div class="col-desk-3 col-tab-6 col-mob-12">
-              <div class="introduce-card c-info">
-                <h3 class="introduce-card__title">Single page application</h3>
-                <p class="introduce-card__desc">
-                  SPA improves your Customer Experience. When navigating from a page to another page, HsBlog WILL NOT
-                  REFRESH
-                  Browser like other themes.
-                </p>
-              </div>
-            </div>
-            <div class="col-desk-3 col-tab-6 col-mob-12">
-              <div class="introduce-card c-purple">
-                <h3 class="introduce-card__title">Drag & Drop Page Builder</h3>
-                <p class="introduce-card__desc">
-                  We have created our own Page Builder for HsBlog. It allows you to build either Web Page or App Home
-                  page.
-                </p>
-              </div>
-            </div>
-            <div class="col-desk-3 col-tab-6 col-mob-12">
-              <div class="introduce-card c-blue">
-                <h3 class="introduce-card__title">Elite Support</h3>
-                <p class="introduce-card__desc">
-                  help.highspeedblog.com is our Help Center where you can find useful information on Documentation page
-                  and
-                  You can ask for us anything there.
-                </p>
-              </div>
-            </div>
-          </div>
+    <!-- trusted block -->
+    <section class="section trusted">
+      <div class="container">
+        <div class="heading text-center mx-auto mb-12">
+          <h2 class="heading__title">Trusted by over <span>1000</span> users
+          </h2>
+
+          <p class="heading__desc">
+            There are many things that are important to catalog design. Your images must be sharp and appealing.
+          </p>
+
         </div>
-      </section>
-      <!-- !introduce block -->
 
-      <!-- trusted block -->
-      <section class="section trusted">
-        <div class="container">
-          <div class="heading text-center mx-auto mb-12">
-            <h2 class="heading__title">Trusted by over <span>1000</span> users
-            </h2>
-
-            <p class="heading__desc">
-              There are many things that are important to catalog design. Your images must be sharp and appealing.
-            </p>
-
+        <div class="grid-fluid trusted-content">
+          <div class="col-mob-12 col-desk-6">
+            <img src="./assets/images/examp.png" alt="" class="trusted-content__image">
           </div>
 
-          <div class="grid-fluid trusted-content">
-            <div class="col-mob-12 col-desk-6">
-              <img src="./assets/images/examp.png" alt="" class="trusted-content__image">
-            </div>
+          <!-- slide -->
+          <div class="col-mob-12 col-desk-6">
+            <div class="slide">
+              <div class="swiper-container">
 
-            <!-- slide -->
-            <div class="col-mob-12 col-desk-6">
-              <div class="slide">
-                <div class="swiper-container">
+                <!-- slide wrapper -->
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
 
-                  <!-- slide wrapper -->
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-
-                      <div class="quote">
-                        <i class="las la-quote-right quote__icon"></i>
-                        <p class="quote__desc">
-                          Only five stars! and this despite the fact that the topic is still under improvement. I hope
-                          future
-                          updates will help her become even better. A great team with a great idea of the catalog.
-                        </p>
-                        <p class="quote__author">
-                          Dustin Barnes
-                        </p>
-                      </div>
+                    <div class="quote">
+                      <i class="las la-quote-right quote__icon"></i>
+                      <p class="quote__desc">
+                        Only five stars! and this despite the fact that the topic is still under improvement. I hope
+                        future
+                        updates will help her become even better. A great team with a great idea of the catalog.
+                      </p>
+                      <p class="quote__author">
+                        Dustin Barnes
+                      </p>
                     </div>
-
-                    <div class="swiper-slide">
-                      <div class="quote">
-                        <i class="las la-quote-right quote__icon"></i>
-
-                        <p class="quote__desc">
-                          Only five stars! and this despite the fact that the topic is still under improvement. I hope
-                          future
-                          updates will help her become even better. A great team with a great idea of the catalog.
-                        </p>
-                        <p class="quote__author">
-                          Dustin Barnes
-                        </p>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                      <div class="quote">
-                        <i class="las la-quote-right quote__icon"></i>
-
-                        <p class="quote__desc">
-                          Only five stars! and this despite the fact that the topic is still under improvement. I hope
-                          future
-                          updates will help her become even better. A great team with a great idea of the catalog.
-                        </p>
-                        <p class="quote__author">
-                          Dustin Barnes
-                        </p>
-                      </div>
-                    </div>
-
                   </div>
+
+                  <div class="swiper-slide">
+                    <div class="quote">
+                      <i class="las la-quote-right quote__icon"></i>
+
+                      <p class="quote__desc">
+                        Only five stars! and this despite the fact that the topic is still under improvement. I hope
+                        future
+                        updates will help her become even better. A great team with a great idea of the catalog.
+                      </p>
+                      <p class="quote__author">
+                        Dustin Barnes
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="quote">
+                      <i class="las la-quote-right quote__icon"></i>
+
+                      <p class="quote__desc">
+                        Only five stars! and this despite the fact that the topic is still under improvement. I hope
+                        future
+                        updates will help her become even better. A great team with a great idea of the catalog.
+                      </p>
+                      <p class="quote__author">
+                        Dustin Barnes
+                      </p>
+                    </div>
+                  </div>
+
                 </div>
-                <!-- !slide wrapper -->
-
-                <!-- slide pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- !slide pagination -->
               </div>
-            </div>
-            <!-- !slide -->
+              <!-- !slide wrapper -->
 
+              <!-- slide pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- !slide pagination -->
+            </div>
           </div>
+          <!-- !slide -->
 
         </div>
-        <div class="background background--left"></div>
-      </section>
-      <!-- !trusted block -->
 
-      <!-- feature block -->
-      <section class="section feature">
-        <div class="container">
+      </div>
+      <div class="background background--left"></div>
+    </section>
+    <!-- !trusted block -->
 
-          <div class="heading mx-auto text-center">
-            <h2 class="heading__title">Essential <span>features</span> for you </h2>
+    <!-- feature block -->
+    <section class="section feature">
+      <div class="container">
 
-            <p class="heading__desc">
-              There are many things that are important to catalog design. Your images must be sharp and appealing.
-            </p>
-          </div>
+        <div class="heading mx-auto text-center">
+          <h2 class="heading__title">Essential <span>features</span> for you </h2>
 
-          <div class="grid-fluid">
-            <div class="col-desk-4 col-tab-6 col-mob-12">
-              <div class="card">
-                <span class="icon c-red">
-                  <i class="las la-heart "></i>
-                </span>
-                <h4 class="card__title">Favorite Posts</h4>
-                <p class="card__desc">It's a useful feature for your customers: They can SAVE an useful article
-                  and easily reach it in future
-                  under Favorite Store.</p>
-              </div>
-            </div>
-
-            <div class="col-desk-4 col-tab-6 col-mob-12">
-              <div class="card">
-                <span class="icon c-purple">
-                  <i class="las la-history"></i>
-                </span>
-                <h4 class="card__title">Recently Viewed</h4>
-                <p class="card__desc">Every time visits an article, HSBlog will remember it. Customers can
-                  easily reach it next time under
-                  Recently Reviewed area.</p>
-              </div>
-            </div>
-
-            <div class="col-desk-4 col-tab-6 col-mob-12">
-              <div class="card">
-                <span class="icon c-info">
-                  <i class="las la-archive"></i>
-                </span>
-                <h4 class="card__title">Awesome Mega Menu</h4>
-                <p class="card__desc">A useful feature helps you can add more information to your menu but
-                  still keep it simple and clean</p>
-              </div>
-            </div>
-
-            <div class="col-desk-4 col-tab-6 col-mob-12">
-              <div class="card">
-                <span class="icon c-blue">
-                  <i class="las la-cogs"></i>
-                </span>
-                <h4 class="card__title">Theme Options</h4>
-                <p class="card__desc">Here you can customize Header Style, Footer Style, Heading Tags's Font,
-                  Social Networks, MailChimp,
-                  Youtube and much more ....</p>
-              </div>
-            </div>
-
-            <div class="col-desk-4 col-tab-6 col-mob-12">
-              <div class="card">
-                <span class="icon c-pink">
-                  <i class="las la-thumbs-up"></i>
-                </span>
-                <h4 class="card__title">Social Login</h4>
-                <p class="card__desc">In addition Default WordPress Login, Customer can easily signin / signup
-                  to your site with their
-                  Facebook and Apple.</p>
-              </div>
-            </div>
-
-            <div class="col-desk-4 col-tab-6 col-mob-12">
-              <div class="card">
-                <span class="icon c-green">
-                  <i class="las la-check-circle"></i>
-                </span>
-                <h4 class="card__title">Google reCaptcha V3</h4>
-                <p class="card__desc">Protects your site website forms from spam entries while letting real
-                  people pass through with ease</p>
-              </div>
-            </div>
-          </div>
-
+          <p class="heading__desc">
+            There are many things that are important to catalog design. Your images must be sharp and appealing.
+          </p>
         </div>
-        <div class="background background--full"></div>
-      </section>
-      <!-- !feature block -->
 
-      <!-- posts block -->
-      <section class="section post">
-        <div class="container">
-          <div class="heading mx-auto text-center">
-            <h2 class="heading__title">Popular posts</h2>
-
-            <p class="heading__desc">
-              There are many things that are important to catalog design. Your images must be sharp and appealing.
-            </p>
+        <div class="grid-fluid">
+          <div class="col-desk-4 col-tab-6 col-mob-12">
+            <div class="card">
+              <span class="icon c-red">
+                <i class="las la-heart "></i>
+              </span>
+              <h4 class="card__title">Favorite Posts</h4>
+              <p class="card__desc">It's a useful feature for your customers: They can SAVE an useful article
+                and easily reach it in future
+                under Favorite Store.</p>
+            </div>
           </div>
 
-
-
-          <div class="grid-fluid">
-            <div class="col-desk-4 col-tab-6 col-mob-12">
-              <a href="#" class="post-card">
-                <div class="post-card__image">
-                  <img src="./assets/images/post1.png" alt="" class="">
-                </div>
-
-                <div class="post-card__detail">
-                  <h3 class="post-card__title">
-                    Alii autem quibus ego assentior
-                  </h3>
-                  <p class="post-card__time">
-                    November 9, 2019 • 03 Comments
-                  </p>
-                  <p class="category">
-                    Design
-                  </p>
-                </div>
-              </a>
+          <div class="col-desk-4 col-tab-6 col-mob-12">
+            <div class="card">
+              <span class="icon c-purple">
+                <i class="las la-history"></i>
+              </span>
+              <h4 class="card__title">Recently Viewed</h4>
+              <p class="card__desc">Every time visits an article, HSBlog will remember it. Customers can
+                easily reach it next time under
+                Recently Reviewed area.</p>
             </div>
+          </div>
 
-            <div class="col-desk-4 col-tab-6 col-mob-12">
-              <a href="#" class="post-card">
-
-                <div class="post-card__image">
-                  <img src="./assets/images/post2.png" alt="" class="">
-                </div>
-
-                <div class="post-card__detail">
-                  <h3 class="post-card__title">
-                    Sunt autem nusquam hoc epicurus in…
-                  </h3>
-                  <p class="post-card__time">
-                    November 9, 2019 • 03 Comments
-                  </p>
-                  <p class="category">
-                    Design
-                  </p>
-                </div>
-              </a>
+          <div class="col-desk-4 col-tab-6 col-mob-12">
+            <div class="card">
+              <span class="icon c-info">
+                <i class="las la-archive"></i>
+              </span>
+              <h4 class="card__title">Awesome Mega Menu</h4>
+              <p class="card__desc">A useful feature helps you can add more information to your menu but
+                still keep it simple and clean</p>
             </div>
+          </div>
 
-            <div class="col-desk-4 col-tab-6 col-mob-12">
-              <a href="#" class="post-card">
-                <div class="post-card__image">
-                  <img src="./assets/images/post3.png" alt="" class="">
-                </div>
-
-                <div class="post-card__detail">
-                  <h3 class="post-card__title">
-                    How To Write Better Advertising Copy
-                  </h3>
-                  <p class="post-card__time">
-                    November 9, 2019 • 03 Comments
-                  </p>
-
-                  <p class="category">
-                    Design
-                  </p>
-                </div>
-              </a>
+          <div class="col-desk-4 col-tab-6 col-mob-12">
+            <div class="card">
+              <span class="icon c-blue">
+                <i class="las la-cogs"></i>
+              </span>
+              <h4 class="card__title">Theme Options</h4>
+              <p class="card__desc">Here you can customize Header Style, Footer Style, Heading Tags's Font,
+                Social Networks, MailChimp,
+                Youtube and much more ....</p>
             </div>
+          </div>
 
-            <div class="col-desk-4 col-tab-6 col-mob-12">
-              <a href="#" class="post-card">
-                <div class="post-card__image">
-                  <img src="./assets/images/post4.png" alt="" class="">
-                </div>
-
-                <div class="post-card__detail">
-                  <h3 class="post-card__title">
-                    Omne animal simul atque in
-                  </h3>
-                  <p class="post-card__time">
-                    November 9, 2019 • 03 Comments
-                  </p>
-
-                  <p class="category">
-                    Design
-                  </p>
-                </div>
-              </a>
+          <div class="col-desk-4 col-tab-6 col-mob-12">
+            <div class="card">
+              <span class="icon c-pink">
+                <i class="las la-thumbs-up"></i>
+              </span>
+              <h4 class="card__title">Social Login</h4>
+              <p class="card__desc">In addition Default WordPress Login, Customer can easily signin / signup
+                to your site with their
+                Facebook and Apple.</p>
             </div>
+          </div>
 
-            <div class="col-desk-4 col-tab-6 col-mob-12">
-              <a href="#" class="post-card">
-                <div class="post-card__image">
-                  <img src="./assets/images/post5.png" alt="" class="">
-                </div>
-
-                <div class="post-card__detail">
-                  <h3 class="post-card__title">
-                    Torquatos nostros quos tu tam
-                  </h3>
-                  <p class="post-card__time">
-                    November 9, 2019 • 03 Comments
-                  </p>
-
-                  <p class="category">
-                    Design
-                  </p>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-desk-4 col-tab-6 col-mob-12">
-              <a href="#" class="post-card">
-                <div class="post-card__image">
-                  <img src="./assets/images/post6.png" alt="" class="">
-                </div>
-
-                <div class="post-card__detail">
-                  <h3 class="post-card__title">
-                    Promote With Postcards
-                  </h3>
-                  <p class="post-card__time">
-                    November 9, 2019 • 03 Comments
-                  </p>
-
-                  <p class="category">
-                    Design
-                  </p>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-desk-4 col-tab-6 col-mob-12">
-              <a href="#" class="post-card">
-                <div class="post-card__image">
-                  <img src="./assets/images/post7.png" alt="" class="">
-                </div>
-
-                <div class="post-card__detail">
-                  <h3 class="post-card__title">
-                    Probabo, inquit, sic agam, ut ita ruant…
-                  </h3>
-                  <p class="post-card__time">
-                    November 9, 2019 • 03 Comments
-                  </p>
-
-                  <p class="category">
-                    Design
-                  </p>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-desk-4 col-tab-6 col-mob-12">
-              <a href="#" class="post-card">
-                <div class="post-card__image">
-                  <img src="./assets/images/post8.png" alt="" class="">
-                </div>
-                <div class="post-card__detail">
-                  <h3 class="post-card__title">
-                    Epicurus in armatum hostem impetum
-                  </h3>
-                  <p class="post-card__time">
-                    November 9, 2019 • 03 Comments
-                  </p>
-
-                  <p class="category">
-                    Design
-                  </p>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-desk-4 col-tab-6 col-mob-12">
-              <a href="#" class="post-card">
-                <div class="post-card__image">
-                  <img src="./assets/images/post9.png" alt="" class="">
-                </div>
-
-                <div class="post-card__detail">
-                  <h3 class="post-card__title">
-                    Low Cost Advertising
-                  </h3>
-                  <p class="post-card__time">
-                    November 9, 2019 • 03 Comments
-                  </p>
-
-                  <p class="category">
-                    Design
-                  </p>
-                </div>
-              </a>
+          <div class="col-desk-4 col-tab-6 col-mob-12">
+            <div class="card">
+              <span class="icon c-green">
+                <i class="las la-check-circle"></i>
+              </span>
+              <h4 class="card__title">Google reCaptcha V3</h4>
+              <p class="card__desc">Protects your site website forms from spam entries while letting real
+                people pass through with ease</p>
             </div>
           </div>
         </div>
 
-      </section>
-      <!-- !posts block -->
-    </main>
+      </div>
+      <div class="background background--full"></div>
+    </section>
+    <!-- !feature block -->
+
+    <!-- posts block -->
+    <section class="section post">
+      <div class="container">
+        <div class="heading mx-auto text-center">
+          <h2 class="heading__title">Popular posts</h2>
+
+          <p class="heading__desc">
+            There are many things that are important to catalog design. Your images must be sharp and appealing.
+          </p>
+        </div>
+
+
+
+        <div class="grid-fluid">
+          <div class="col-desk-4 col-tab-6 col-mob-12">
+            <a href="#" class="post-card">
+              <div class="post-card__image">
+                <img src="./assets/images/post1.png" alt="" class="">
+              </div>
+
+              <div class="post-card__detail">
+                <h3 class="post-card__title">
+                  Alii autem quibus ego assentior
+                </h3>
+                <p class="post-card__time">
+                  November 9, 2019 • 03 Comments
+                </p>
+                <p class="category">
+                  Design
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-desk-4 col-tab-6 col-mob-12">
+            <a href="#" class="post-card">
+
+              <div class="post-card__image">
+                <img src="./assets/images/post2.png" alt="" class="">
+              </div>
+
+              <div class="post-card__detail">
+                <h3 class="post-card__title">
+                  Sunt autem nusquam hoc epicurus in…
+                </h3>
+                <p class="post-card__time">
+                  November 9, 2019 • 03 Comments
+                </p>
+                <p class="category">
+                  Design
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-desk-4 col-tab-6 col-mob-12">
+            <a href="#" class="post-card">
+              <div class="post-card__image">
+                <img src="./assets/images/post3.png" alt="" class="">
+              </div>
+
+              <div class="post-card__detail">
+                <h3 class="post-card__title">
+                  How To Write Better Advertising Copy
+                </h3>
+                <p class="post-card__time">
+                  November 9, 2019 • 03 Comments
+                </p>
+
+                <p class="category">
+                  Design
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-desk-4 col-tab-6 col-mob-12">
+            <a href="#" class="post-card">
+              <div class="post-card__image">
+                <img src="./assets/images/post4.png" alt="" class="">
+              </div>
+
+              <div class="post-card__detail">
+                <h3 class="post-card__title">
+                  Omne animal simul atque in
+                </h3>
+                <p class="post-card__time">
+                  November 9, 2019 • 03 Comments
+                </p>
+
+                <p class="category">
+                  Design
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-desk-4 col-tab-6 col-mob-12">
+            <a href="#" class="post-card">
+              <div class="post-card__image">
+                <img src="./assets/images/post5.png" alt="" class="">
+              </div>
+
+              <div class="post-card__detail">
+                <h3 class="post-card__title">
+                  Torquatos nostros quos tu tam
+                </h3>
+                <p class="post-card__time">
+                  November 9, 2019 • 03 Comments
+                </p>
+
+                <p class="category">
+                  Design
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-desk-4 col-tab-6 col-mob-12">
+            <a href="#" class="post-card">
+              <div class="post-card__image">
+                <img src="./assets/images/post6.png" alt="" class="">
+              </div>
+
+              <div class="post-card__detail">
+                <h3 class="post-card__title">
+                  Promote With Postcards
+                </h3>
+                <p class="post-card__time">
+                  November 9, 2019 • 03 Comments
+                </p>
+
+                <p class="category">
+                  Design
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-desk-4 col-tab-6 col-mob-12">
+            <a href="#" class="post-card">
+              <div class="post-card__image">
+                <img src="./assets/images/post7.png" alt="" class="">
+              </div>
+
+              <div class="post-card__detail">
+                <h3 class="post-card__title">
+                  Probabo, inquit, sic agam, ut ita ruant…
+                </h3>
+                <p class="post-card__time">
+                  November 9, 2019 • 03 Comments
+                </p>
+
+                <p class="category">
+                  Design
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-desk-4 col-tab-6 col-mob-12">
+            <a href="#" class="post-card">
+              <div class="post-card__image">
+                <img src="./assets/images/post8.png" alt="" class="">
+              </div>
+              <div class="post-card__detail">
+                <h3 class="post-card__title">
+                  Epicurus in armatum hostem impetum
+                </h3>
+                <p class="post-card__time">
+                  November 9, 2019 • 03 Comments
+                </p>
+
+                <p class="category">
+                  Design
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-desk-4 col-tab-6 col-mob-12">
+            <a href="#" class="post-card">
+              <div class="post-card__image">
+                <img src="./assets/images/post9.png" alt="" class="">
+              </div>
+
+              <div class="post-card__detail">
+                <h3 class="post-card__title">
+                  Low Cost Advertising
+                </h3>
+                <p class="post-card__time">
+                  November 9, 2019 • 03 Comments
+                </p>
+
+                <p class="category">
+                  Design
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- !posts block -->
+
+
+    <!-- test -->
+    <section class="section test">
+      <div class="grid-fluid">
+        <div class="col-desk-6 mx-auto">
+
+          <!-- tab -->
+          <div id="tab1" class="tab-wrapper">
+            <ul class="tab__nav">
+              <li class="tab__item">
+                <a href="#" class="tab__link is-active">tab link 1</a>
+              </li>
+              <li class="tab__item">
+                <a href="#" class="tab__link">tab link 2</a>
+              </li>
+              <li class="tab__item">
+                <a href="#" class="tab__link">tab link 3</a>
+              </li>
+            </ul>
+
+            <div class="tab__content">
+              <div class="tab__pane is-active">
+                <div class="grid-fluid">
+                  <div class="col-desk-4 col-tab-6 col-mob-12">
+                    <a href="#" class="post-card">
+                      <div class="post-card__image">
+                        <img src="./assets/images/post1.png" alt="" class="">
+                      </div>
+
+                      <div class="post-card__detail">
+                        <h3 class="post-card__title">
+                          Alii autem quibus ego assentior
+                        </h3>
+                        <p class="post-card__time">
+                          November 9, 2019 • 03 Comments
+                        </p>
+                        <p class="category">
+                          Design
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-desk-4 col-tab-6 col-mob-12">
+                    <a href="#" class="post-card">
+
+                      <div class="post-card__image">
+                        <img src="./assets/images/post2.png" alt="" class="">
+                      </div>
+
+                      <div class="post-card__detail">
+                        <h3 class="post-card__title">
+                          Sunt autem nusquam hoc epicurus in…
+                        </h3>
+                        <p class="post-card__time">
+                          November 9, 2019 • 03 Comments
+                        </p>
+                        <p class="category">
+                          Design
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-desk-4 col-tab-6 col-mob-12">
+                    <a href="#" class="post-card">
+                      <div class="post-card__image">
+                        <img src="./assets/images/post3.png" alt="" class="">
+                      </div>
+
+                      <div class="post-card__detail">
+                        <h3 class="post-card__title">
+                          How To Write Better Advertising Copy
+                        </h3>
+                        <p class="post-card__time">
+                          November 9, 2019 • 03 Comments
+                        </p>
+
+                        <p class="category">
+                          Design
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-desk-4 col-tab-6 col-mob-12">
+                    <a href="#" class="post-card">
+                      <div class="post-card__image">
+                        <img src="./assets/images/post4.png" alt="" class="">
+                      </div>
+
+                      <div class="post-card__detail">
+                        <h3 class="post-card__title">
+                          Omne animal simul atque in
+                        </h3>
+                        <p class="post-card__time">
+                          November 9, 2019 • 03 Comments
+                        </p>
+
+                        <p class="category">
+                          Design
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-desk-4 col-tab-6 col-mob-12">
+                    <a href="#" class="post-card">
+                      <div class="post-card__image">
+                        <img src="./assets/images/post5.png" alt="" class="">
+                      </div>
+
+                      <div class="post-card__detail">
+                        <h3 class="post-card__title">
+                          Torquatos nostros quos tu tam
+                        </h3>
+                        <p class="post-card__time">
+                          November 9, 2019 • 03 Comments
+                        </p>
+
+                        <p class="category">
+                          Design
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-desk-4 col-tab-6 col-mob-12">
+                    <a href="#" class="post-card">
+                      <div class="post-card__image">
+                        <img src="./assets/images/post6.png" alt="" class="">
+                      </div>
+
+                      <div class="post-card__detail">
+                        <h3 class="post-card__title">
+                          Promote With Postcards
+                        </h3>
+                        <p class="post-card__time">
+                          November 9, 2019 • 03 Comments
+                        </p>
+
+                        <p class="category">
+                          Design
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+              <div class="tab__pane">
+                <p> content thứ 2
+                </p>
+              </div>
+
+              <div class="tab__pane">
+                <p>content thứ 3</p>
+              </div>
+            </div>
+          </div>
+          <!-- !tab -->
+
+        </div>
+      </div>
+    </section>
+    <!-- !test -->
+  </main>
 
   </div>
 
   <!-- slide swiper -->
   <script src="./assets/vendors/slide/swiper.min.js"></script>
   <script src="./assets/js/scripts.js"></script>
+  <script src="./assets/js/Tab.js"></script>
+
   <script>
     const swiper = new Swiper('.trusted-content .swiper-container', {
       pagination: {
@@ -764,6 +927,12 @@
         observeParents: true,
       }
     });
+
+    const testTab = Tab({
+      el: '#tab1',
+      tabLinks: '.tab__link',
+      tabPanes: '.tab__pane'
+    }).render();
 
   </script>
 
