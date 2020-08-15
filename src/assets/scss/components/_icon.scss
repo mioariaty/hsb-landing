@@ -1,6 +1,7 @@
 .icon {
   @include flex(center, center, nowrap);
   @include setIconSize(px(70));
+  margin-bottom: px(30);
 
   border-radius: 50%;
   font-size: px(34);

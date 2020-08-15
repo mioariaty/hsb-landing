@@ -53,7 +53,7 @@
 })();
 
 /*
-  doc
+  Example
 
   <div id="id_tab_wrapper" class="tab-wrapper">
     <a href="#" class="tab__link is-active">tab thứ 1</a>
@@ -68,9 +68,9 @@
 
   // define options
   const test-tab = Tab({
-    el: '#id_tab_wrapper',        // example
-    navLinks: '.nav_link',        // example
-    navPanes: '.nav_pane_content' // example
+    el: '#id_tab_wrapper',
+    navLinks: '.nav_link',
+    navPanes: '.nav_pane_content'
   })
 
   // call tab
