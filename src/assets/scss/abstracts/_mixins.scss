@@ -53,8 +53,6 @@
 }
 
 @mixin sub-menu($bgColor, $borderColor, $minWidth) {
-  position: absolute;
-  z-index: 2;
   background-color: $bgColor;
   border: 1px solid $borderColor;
   min-width: $minWidth;

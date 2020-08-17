@@ -11,11 +11,20 @@
   z-index: 2;
   color: $text-default;
 
-  @include media("<=tablet") {
+  @include media("<desktop") {
     @include isHidden;
     min-width: auto;
+    max-width: 96rem;
   }
 }
 .mega-dropdown {
   position: static !important;
+}
+.megamenu-active .mega-menu {
+  @include isShown;
+  @include setPositions(unset, unset, unset, unset);
+  display: block;
+  position: static;
+  transform: unset;
+  transition: none;
 }

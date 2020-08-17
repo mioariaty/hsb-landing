@@ -6,32 +6,22 @@
   &:before {
     content: "";
     position: absolute;
-    top: -30px;
-    left: -45px;
+    top: 0;
+    left: 0;
     width: 80px;
     height: 80px;
     z-index: -1;
     border-radius: 50%;
     background-color: currentColor;
     opacity: 0.1;
+    transform: translate(-50%, -40%);
   }
 
   @include media("<tablet") {
     margin-bottom: 2rem;
     &::before {
-      top: -22px;
-      left: -25px;
       width: 60px;
       height: 60px;
-    }
-  }
-  @include media("<desktop") {
-    margin-bottom: 3rem;
-    &::before {
-      top: -25px;
-      left: -25px;
-      width: 70px;
-      height: 70px;
     }
   }
 }

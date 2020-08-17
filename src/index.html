@@ -32,7 +32,7 @@
 
               <!-- sub menu -->
               <ul class="sub-menu text-center">
-                <li class="sub-menu__item">
+                <li class="sub-menu__item has-submenu">
                   <a href="" class="sub-menu__link">Sub link 1</a>
                 </li>
                 <li class="sub-menu__item">
@@ -87,7 +87,7 @@
                   </div>
                   <div class="col-desk-8 col-tab-6 col-mob-12">
                     <div class="slide">
-                      <div class="swiper-container">
+                      <div class="mega-slide swiper-container">
 
                         <!-- slide wrapper -->
                         <div class="swiper-wrapper">
@@ -491,7 +491,7 @@
           <!-- slide -->
           <div class="col-mob-12 col-desk-6">
             <div class="slide">
-              <div class="swiper-container">
+              <div class="slide-quote swiper-container">
 
                 <!-- slide wrapper -->
                 <div class="swiper-wrapper">
@@ -863,7 +863,7 @@
   <script src="./assets/js/Tab.js"></script>
 
   <script>
-    const swiper = new Swiper('.trusted-content .swiper-container', {
+    const swiper = new Swiper('.slide-quote', {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -872,11 +872,15 @@
       }
     });
 
-    const megaSwiper = new Swiper('.mega-menu .swiper-container', {
+    const megaSwiper = new Swiper('.mega-slide', {
       pagination: {
         clickable: false,
         observer: true,
         observeParents: true,
+        slidesPerColumn: 1,
+        slidesPerGroup: 1,
+        loop: false,
+        effect: 'fade'
       }
     });
 

@@ -20,7 +20,7 @@
   display: none;
 
   @include media("<desktop") {
-    @include setPositions(px(33), unset, unset, px(40));
+    @include setPositions(px(33), unset, unset, px(20));
     display: block;
     position: fixed;
     font-size: 2em;
@@ -71,7 +71,7 @@
   padding: 0 px(25);
   @include media("<desktop") {
     width: 100%;
-    padding: px(10);
+    padding: px(10) 0;
   }
   &:last-child {
     padding-left: 0px;
@@ -82,11 +82,18 @@
     &:hover,
     &:focus,
     &:focus-within {
-      .sub-menu,
       .mega-menu {
         visibility: visible;
         opacity: 1;
         transition-delay: 0s, 0s, 0.3s;
+      }
+    }
+
+    &:hover,
+    &:focus,
+    &:focus-within {
+      .sub-menu {
+        display: block;
       }
     }
   }
